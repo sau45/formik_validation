@@ -1,0 +1,94 @@
+@import '../../mixins.scss';
+
+.main-section{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url('../image/img1.jfif');
+    height: 43rem;
+    @include md{
+        
+
+    }
+    .main-form{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        top: 33px;
+        background-color: rgb(255 255 255 / 56%);
+        border-radius: 5px;
+        @include md{
+            width: 276px;
+          
+        }
+        .input{
+             
+            width: 360px;
+            height: 46px;
+            margin: 2px 10px 3px;
+            input{
+
+                @include md{
+                    width: 230px;
+                    height: 11px;
+                    margin-top: 1px;
+                    margin-left: 1px;
+                
+                    
+                }
+            }
+        }
+        .MuiOutlinedInput-notchedOutline {
+
+            @include md{
+                height: 51px;
+                width: 260px;
+
+            }
+            
+
+        }
+        .countryformcontrol{
+            margin-top: 10px;
+            border-radius: 4px;
+            background-color: --var(--black-light);
+            transform: scale(1);
+            @include md{
+                height: 46px;
+            }
+            .countryselect{
+                color: white;
+            }
+
+        }
+      
+    }
+    .css-1nrlq1o-MuiFormControl-root{
+        margin: 8px;
+        background: #0000003d;
+        label{
+            color: white;
+            margin-left: 5px;
+            margin-top: 3px;
+        }
+        
+            .css-dmmspl-MuiFormGroup-root{
+                display: flex;
+                flex-direction: row;
+            }
+
+        
+    }
+    .hobbiescontrol{
+        @include md{
+            height: 46px;
+        }
+    }
+    .submitbutton{
+        width: 30%;
+        display: block;
+        margin: 10px auto;
+    }
+}
